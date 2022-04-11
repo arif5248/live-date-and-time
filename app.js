@@ -5,10 +5,10 @@ function digitalClock(){
   let minutes=allDate.getMinutes();
   let seconds= allDate.getSeconds();
   let date = allDate.getDate();
-  let month = allDate.getMonth();
+  let month = allDate.getMonth()+1;
   let year = allDate.getFullYear();
   let clockFormate='AM';
-
+  
   if(hours==0){
     hours=12;
   }
