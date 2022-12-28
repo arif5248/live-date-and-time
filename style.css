@@ -17,6 +17,12 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+ marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: #8ebf42;
+      font-family: sans-serif;
+}
 .content{
   display: flex;
   justify-content: space-evenly;
