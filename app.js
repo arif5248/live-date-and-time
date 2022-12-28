@@ -36,4 +36,20 @@ function digitalClock(){
 
 digitalClock();
 
+function counter(){
+  let deadline = new Date("Dec 31, 2022 11:00:00").getTime();
+  let now = new Date().getTime();
+  let leftTime = deadline - now;
+  let days = Math.floor(leftTime / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((leftTime%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+  let minutes = Math.floor((leftTime % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((leftTime % (1000 * 60)) / 1000);
+  document.getElementById('counterDay').innerText=days;
+  document.getElementById('counterHour').innerText=hours;
+  document.getElementById('counterMinute').innerText=minutes;
+  document.getElementById('counterSecond').innerText=seconds;
 
+  setInterval(counter,1000);
+}
+
+counter();
