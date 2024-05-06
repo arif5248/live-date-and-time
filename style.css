@@ -111,6 +111,7 @@ smalltext{
   margin-top: 0px;
 }
 .marqueeContainer {
+  width: 100%
   font-size: 50px;
   font-weight: 800;
   color: #08d6b0;
