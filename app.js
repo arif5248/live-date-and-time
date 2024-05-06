@@ -37,7 +37,7 @@ function digitalClock(){
 digitalClock();
 
 function counter(){
-  let deadline = new Date("Dec 31, 2022 11:00:00").getTime();
+  let deadline = new Date("May 22, 2024 22:00:00").getTime();
   let now = new Date().getTime();
   let leftTime = deadline - now;
   let days = Math.floor(leftTime / (1000 * 60 * 60 * 24));
